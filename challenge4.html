@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>replit</title>
+</head>
+
+<body>
+    <div id="first" style="border:1px solid black ;display: flex;flex-direction: column; ">
+
+    </div>
+
+    <div id="second" style="border:1px solid black ;display: flex;flex-direction: column; ">
+
+    </div>
+    <div id="third" style="border:1px solid black ;display: flex;flex-direction: column;">
+
+    </div>
+    <div id="fourth" style="border:1px solid black ;display: flex;flex-direction: column">
+
+    </div>
+    <div id="fivth">
+
+    </div>
+    <div>
+      <p>company <span id="one"></span></p>
+      <p>model <span id="two"></span></p>
+      <p>color <span id="three"></span></p>
+    </div>
+
+    <script>
+
+        const mobile = ["redmi", "iphone", "oppo", "vivo"];
+        document.getElementById("first").innerHTML = ("<b>mobile</b>-- " + mobile);
+        mobile.push("moto");
+        mobile[0] = "iphone";
+        mobile[1] = "oneplus"
+
+
+        document.getElementById("second").innerHTML = ("<b>top mobile </b>--" + mobile)
+
+
+        const dishtvchannel = ["aitel:333 ", "tatasky:324", "videocon:333"];
+        document.getElementById("third").innerHTML = dishtvchannel;
+
+
+        dishtvchannel[0] = "airtel:1000"
+        dishtvchannel.push("d2h:1234")
+
+        document.getElementById("fourth").innerHTML = dishtvchannel;
+
+      
+        
+        const car = [ " company = fiat " ," model = 500 ", "color = white" ];
+        document.getElementById("fivth").innerHTML = car;
+
+
+
+         car.color = " red "
+         car.model = " 800 "
+        car.company = " fiat "
+        
+        
+
+
+        document.getElementById("one").innerHTML =  "=" + car.company;
+        document.getElementById("two").innerHTML = "=" + car.model;
+        document.getElementById("three").innerHTML = "=" + car.color;
+
+
+
+     
+        
+    </script>
+
+</body>
+
+</html>

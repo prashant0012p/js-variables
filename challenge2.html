@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+</head>
+
+<body>
+    <h2>JavaScript const</h2>
+    <p>Declaring a constant array does NOT make the elements unchangeable:</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+        // create an array
+        const fruits = ["apple", "banana", "orange"];
+        // display the array
+        document.getElementById("demo").innerHTML = fruits;
+
+
+        // Change an element:
+        fruits[1] = "Apricot"
+        // Add an element:
+        fruits.push("mango");
+        //    we can place mango without remove any item    
+    
+
+        // Display the Array:
+        document.getElementById("demo1").innerHTML = fruits;
+
+
+
+
+
+        const car = { type: "fiat", model: "500", color: "white" };
+        car.color = " red"
+        car.model = "800"
+        console.log(car)
+        document.getElementById("demo2").innerHTML = car;
+
+
+
+       
+
+
+    </script>
+
+</body>
